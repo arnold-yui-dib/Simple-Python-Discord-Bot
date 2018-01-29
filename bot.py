@@ -1,6 +1,6 @@
 import discord
 from discord.ext.commands import Bot
-from discord.ext.commands import commands
+from discord.ext import commands
 
 Client = discord.Client()
 bot_prefix= "m"
