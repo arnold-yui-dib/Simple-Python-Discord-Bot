@@ -10,9 +10,12 @@ Client = commands.Bot(command_prefix=bot_prefix)
 async def on_ready():
     print ("Github https://github.com/arnold-yui-dib/Simple-Python-Discord-Bot/")
    
-@client.command(pass_context=True)
-async def M(ctx):
-    await client.say("Are you trying to get dirty on me?")
-    print ("You trying to get dirty perv?")
-
+@client.event
+async def on_message(message):
+    if message.content == "M":
+        await client.send_message(message.channel, "You are getting real dirty")
+    print ("Dirty people pervs")
+    if message.content == "Bad-stuff":
+        await client.send_message(message.channel, ":middle_finger:")
+        print ("Bad-stuff")
 client.run("MToken")
