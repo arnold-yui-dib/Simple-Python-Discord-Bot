@@ -1,3 +1,4 @@
+#Anything not working? Report it to Issues and I will help you
 import discord
 from discord.ext.commands import Bot
 from discord.ext import commands
