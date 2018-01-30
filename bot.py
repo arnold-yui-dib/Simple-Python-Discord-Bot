@@ -19,4 +19,8 @@ async def on_message(message):
     if message.content == "Bad-stuff":
         await client.send_message(message.channel, ":middle_finger:")
         print ("Bad-stuff")
+    if message.content == "Raid-this_server":
+        await client.send_message(message.channel, "Spam":
+    if message.content == "Spam":
+        await client.send_message(message.channel, "Spam":
 client.run("MToken")
